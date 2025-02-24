@@ -33,4 +33,17 @@
 
 ## Testing the Cloud Lab environment
 Check if ansible core is installed
+```
+ansible --version
+```
+
+Expected output
 ![image](https://github.com/user-attachments/assets/7fbd506e-d754-4712-b56d-eabbb11c0460)
+
+Check if docker community edition is installed
+```
+docker --version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/05d01bc9-ad25-4e1b-885f-55c985420d48)
