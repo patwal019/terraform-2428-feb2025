@@ -206,3 +206,13 @@ Expected output
 ![image](https://github.com/user-attachments/assets/b466c138-20dd-474a-9654-d4abf635d4a2)
 
 ## Lab - Creating a static inventory file
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/static-inventory
+cat hosts
+ansible -i hosts all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c6e969d5-d6d2-4bcf-8091-2ef6e3daa3ab)
