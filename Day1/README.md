@@ -159,3 +159,8 @@ sudo apt install ansible
 ```
 ## Info - Ansible High Level Architecture 
 ![Ansible](AnsibleHighLevelArchitecture.png)
+
+## Lab - Build Custom Docker images to create ansible node containers
+
+
+## Lab - Creating a static inventory file
