@@ -392,3 +392,18 @@ curl http://localhost:8002
 Expected output
 ![image](https://github.com/user-attachments/assets/93e27705-996f-4d66-a413-53c42087f6ea)
 
+## Lab - Getting help about any ansible built-in module
+```
+ansible-doc file
+ansible-doc shell
+ansible-doc copy
+ansible-doc ping
+ansible-doc template
+ansible-doc service
+ansible-doc command
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d8499c4f-7e79-4730-9cd3-fc1f4c257a64)
+![image](https://github.com/user-attachments/assets/c2c7e938-dd0a-49e8-be9e-b2c73badfeb8)
+![image](https://github.com/user-attachments/assets/f261a77d-0a2a-4cae-89c0-5532945fa4c7)
