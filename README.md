@@ -29,3 +29,8 @@
 - as per my understanding atleast 50% of the participants don't meet the pre-requisites, hence I'll try to cover the basics
 - the challenge is we may not be able to cover every topics agreed in the training agenda
 </pre>
+
+
+## Testing the Cloud Lab environment
+Check if ansible core is installed
+![image](https://github.com/user-attachments/assets/7fbd506e-d754-4712-b56d-eabbb11c0460)
