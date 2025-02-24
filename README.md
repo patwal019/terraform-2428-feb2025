@@ -9,3 +9,19 @@
 - Once you are done with the pre-test, you may leave a message in the Webex chat
 - Once everyone confirms that you are done with the pre-test, we will proceed with the training
 </pre>
+
+## Training pre-requisites
+<pre>
+- Linux working knowledge is a must
+- One should know how to install,uninstall,update/upgrade software tools in Linux
+- One should be aware 
+  - how SSH works, Powershell basics
+  - SCP/SFTP basics
+  - navigating to folders from linux terminal
+  - package manager
+  - repository server
+  - various linux distributions
+  - Git/GitHub basics
+  - Docker or container basics
+  - What is the Jenkins, CI/CD, DevOps basics, etc.,
+</pre>
