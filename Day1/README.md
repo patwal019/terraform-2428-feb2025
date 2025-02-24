@@ -174,7 +174,7 @@ Let's build custom ubuntu based ansibe node docker image as shown below
 cd ~/terraform-2428-feb2025
 git pull
 cd Day1/CustomDockerAnsibleNodeImages/ubuntu-ansible
-cp ~/.ssh/ed25519.pub authorized_keys
+cp ~/.ssh/id_ed25519.pub authorized_keys
 docker build -t tektutor/ubuntu-ansible-node:1.0 .
 rm authorized_keys
 docker images
