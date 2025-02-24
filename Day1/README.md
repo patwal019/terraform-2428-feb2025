@@ -1,6 +1,6 @@
 # Day 1
 
-## Kindly provide your first day feedback
+## Kindly provide your first day feedback ( Do it from RPS cloud ubuntu machine chrome browser )
 <pre>
 https://survey.zohopublic.com/zs/QaEBQK
 </pre>  
