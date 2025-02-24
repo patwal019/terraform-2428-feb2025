@@ -107,6 +107,15 @@
      - Red Hat is an IBM company
 </pre>
 
+## Info - Ansible Module
+<pre>
+- Ansible comes with many ansible modules
+- ansible modules are reusable code that automates one functionality
+- For example
+  - to copy files from local machine to remove ansible linux node, there is an ansible module called copy
+  - to manage files/folders, there is an ansible module called file
+  - to manage services, there is a module called service
+</pre>
 
 ## Info - Ansible ad-hoc command
 - ansible ad-hoc command is just invoking a single ansible module without writing a playbook
