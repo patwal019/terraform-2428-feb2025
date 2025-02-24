@@ -184,5 +184,14 @@ Expected output
 ![image](https://github.com/user-attachments/assets/3e98431c-b19c-4083-bb82-9110f609b312)
 ![image](https://github.com/user-attachments/assets/9a36399d-44ff-403f-b1f9-da7aeba4fbae)
 
+## Lab - Let's create couple of ubuntu ansible node containers using our custom docker image
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/15bd853a-871b-4e0a-84b3-7e8ad06a8ef3)
 
 ## Lab - Creating a static inventory file
