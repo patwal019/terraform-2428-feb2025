@@ -55,3 +55,22 @@ terraform -version
 
 Expected output
 ![image](https://github.com/user-attachments/assets/87863642-b94f-449e-b141-afc347cc7711)
+
+
+## Cloning TekTutor Training Repository ( one time activity )
+```
+cd ~
+git clone https://github.com/tektutor/terraform-2428-feb2025.git
+cd terraform-2428-feb2025
+```
+Expected output
+![image](https://github.com/user-attachments/assets/edcc3f8e-a6d7-4a92-afa6-2282c6dd9e3f)
+
+## Each time I commit/make some changes in this github repo, you need to refresh this page and pull the delta changes
+```
+cd ~/terraform-2428-feb2025
+git pull
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/edcc3f8e-a6d7-4a92-afa6-2282c6dd9e3f)
