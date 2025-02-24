@@ -203,5 +203,6 @@ exit
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/28238e84-eecc-4c1b-8201-f3e06c823b59)
+![image](https://github.com/user-attachments/assets/b466c138-20dd-474a-9654-d4abf635d4a2)
 
 ## Lab - Creating a static inventory file
