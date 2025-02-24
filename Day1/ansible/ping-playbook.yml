@@ -1,0 +1,7 @@
+---
+- name: This playbook pings ubuntu1 and ubuntu2 ansible node containers
+  hosts: all
+  tasks:
+  - name: Ping ansible node
+    ping:
+...
