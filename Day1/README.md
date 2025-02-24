@@ -305,3 +305,44 @@ Ansible and any configuration management tool supports Idempotent property.  No 
 
 Expected output
 ![image](https://github.com/user-attachments/assets/d7e16858-5352-4737-9c33-3b73b617003f)
+
+Accessing the web page 
+```
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Let's verify the current state of nginx service using ansible ad-hoc command
+```
+ansible -i inventory ubuntu1 -m shell -a "service nginx status"
+```
+![image](https://github.com/user-attachments/assets/11cf735c-d11f-4a53-ade4-fd973c6d9d94)
+
+Let's update the playbook to start the nginx service
+```
+- name: This playbook will install nginx, configures nginx to serve web pages from custom folder and deploys a custom web page
+  hosts: all
+  tasks:
+  - name: Install nginx in Ubuntu
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Start the nginx server
+    service: name=nginx state=started 
+```
+Run the playbook
+
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i inventory install-nginx-playbook.yml
+
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/9307324a-b98f-45ec-806c-b84624e7cf07)
+![image](https://github.com/user-attachments/assets/2fc54e0b-9a64-455a-9023-8e5780f859ba)
+![image](https://github.com/user-attachments/assets/4a6de8e7-73c0-434d-b551-c606b4a5aec3)
