@@ -3,3 +3,6 @@
   tasks:
   - name: Install nginx in Ubuntu
     apt: name=nginx state=latest update_cache=yes
+
+  - name: Start the nginx server
+    service: name=nginx state=started 
