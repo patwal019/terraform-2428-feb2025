@@ -271,3 +271,16 @@ In the above screenshot,
 - under the tasks section, we have defined a single task
 - Ping ansible node is the task description which is optional, but it is best practice
 - ping: is the ansible module we are invoking as part of the task
+
+## Lab - Playbook with multiple play 
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat ping-playbook.yml
+ansible-playbook -i inventory ping-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7c6fef80-91aa-4486-b62c-f62c68f96fcb)
+![image](https://github.com/user-attachments/assets/a7cff0fa-7301-4380-b198-d57f8dee0b38)
