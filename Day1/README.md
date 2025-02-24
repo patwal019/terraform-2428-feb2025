@@ -251,3 +251,15 @@ ansible all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6c1ad9a0-0c25-450d-b1ea-52df5517f336)
+
+## Lab - Running your first anisble playbook
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat ping-playbook.yml
+ansible-playbook -i inventory ping-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/bb96316a-8da2-4686-9b11-d92c22fc3ca4)
