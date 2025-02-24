@@ -47,3 +47,11 @@ docker --version
 
 Expected output
 ![image](https://github.com/user-attachments/assets/05d01bc9-ad25-4e1b-885f-55c985420d48)
+
+Check if Terraform is installed
+```
+terraform -version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/87863642-b94f-449e-b141-afc347cc7711)
