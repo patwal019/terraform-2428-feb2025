@@ -1,5 +1,27 @@
 # Day 1
 
+## Linux Repository Servers
+<pre>
+- Repository Servers are FTP Servers that maintained multiple opensource installer packages that works on many different Linux versions
+- For instance, For Ubuntu Linux distribution, the repository server is maintained by Ubuntu organization
+  - for each version of ubuntu os, there are dedicated pages/urls maintained in Repository Servers to provide stable version of software installers
+</pre>  
+
+## Linux Package Managers
+<pre>
+- a utility that comes with every Linux distribution
+- used to downad/install/uninstall/upgrade/downgrade softwares
+- package manager downloads the softwares from a url maintained in repository configuration files
+- the package manager is aware from where to download the software
+- the package manager will never download a software that is incompatible to a particular linux distribution
+- each Linux distribution supports different package managers
+- For example
+  - In Debian Linux family, i.e ubuntu, there is a package manager called apt or apt-get, snap, etc.,
+  - In Red Hat Linux family
+    - Fedora, RHEL, Rocky Linux 
+    - package manager supported is dnf, yum, rpm, etc.,
+</pre>  
+
 ## Info - Provisioning Tools Overview
 <pre>
 - Infrastructure as a code tool (IaaC)
