@@ -185,6 +185,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/9a36399d-44ff-403f-b1f9-da7aeba4fbae)
 
 ## Lab - Let's create couple of ubuntu ansible node containers using our custom docker image
+![port-forwarding](PortForwarding.png)
+
 ```
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:1.0
 docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:1.0
@@ -252,7 +254,7 @@ ansible all -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/6c1ad9a0-0c25-450d-b1ea-52df5517f336)
 
-## Lab - Running your first anisble playbook
+## Lab - Running your first ansible playbook
 ```
 cd ~/terraform-2428-feb2025
 git pull
@@ -263,3 +265,22 @@ ansible-playbook -i inventory ping-playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/bb96316a-8da2-4686-9b11-d92c22fc3ca4)
+
+In the above screenshot, 
+- hosts is a section that tells ansible the targetted ansible node servers
+- under the tasks section, we have defined a single task
+- Ping ansible node is the task description which is optional, but it is best practice
+- ping: is the ansible module we are invoking as part of the task
+
+## Lab - Playbook with multiple play 
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat ping-playbook.yml
+ansible-playbook -i inventory ping-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7c6fef80-91aa-4486-b62c-f62c68f96fcb)
+![image](https://github.com/user-attachments/assets/a7cff0fa-7301-4380-b198-d57f8dee0b38)
