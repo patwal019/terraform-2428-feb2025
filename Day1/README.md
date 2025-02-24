@@ -14,10 +14,13 @@
     - updating user details, credentials, etc.,
   - adding a windows/linux/unix server to a domain
   - removing a windows/linux/unix server from a domain
-  - installting software patches
+    - installing software patches
+- managing switches/routers
+- creating a vlan, editing, updating network stuffs
 - examples
   - Puppet
   - Chef
   - Salt/Salt Stack
   - Ansible
+
 </pre>
