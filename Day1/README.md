@@ -185,6 +185,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/9a36399d-44ff-403f-b1f9-da7aeba4fbae)
 
 ## Lab - Let's create couple of ubuntu ansible node containers using our custom docker image
+![port-forwarding](PortForwarding.png)
+
 ```
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:1.0
 docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:1.0
