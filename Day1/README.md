@@ -169,7 +169,7 @@ ssh-keygen
 Expected output
 ![image](https://github.com/user-attachments/assets/711f2733-f19e-451b-87b2-b13a661a4731)
 
-
+Let's build custom ubuntu based ansibe node docker image as shown below
 ```
 cd ~/terraform-2428-feb2025
 git pull
@@ -179,6 +179,10 @@ docker build -t tektutor/ubuntu-ansible-node:1.0 .
 rm authorized_keys
 docker images
 ```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3e98431c-b19c-4083-bb82-9110f609b312)
+![image](https://github.com/user-attachments/assets/9a36399d-44ff-403f-b1f9-da7aeba4fbae)
 
 
 ## Lab - Creating a static inventory file
