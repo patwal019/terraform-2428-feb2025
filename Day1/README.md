@@ -108,3 +108,4 @@
 </pre>
 
 ## Info - Ansible High Level Architecture 
+![Ansible](AnsibleHighLevelArchitecture.png)
