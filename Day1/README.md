@@ -231,3 +231,35 @@ Expected output
 ![image](https://github.com/user-attachments/assets/31e00186-ab52-4f19-816d-0992fda167d3)
 ![image](https://github.com/user-attachments/assets/f64abf03-0ce2-4e86-9a54-0ba10dffc1b2)
 ![image](https://github.com/user-attachments/assets/2907e3cb-ff33-4a56-8bb9-ecd1f7246369)
+
+## Lab - Ansible config file
+Create a file name /tmp/.ansible.cfg with the below content
+```
+inventory=/home/rps/terraform-2428-feb2025/Day1/dynamic-inventory/dynamic-inventory.py
+```
+
+Export the environment 
+```
+export ANSIBLE_CONFIG=/tmp/.ansible.cfg
+```
+
+Run ping ansible ad-hoc command
+```
+cd ~
+ansible all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6c1ad9a0-0c25-450d-b1ea-52df5517f336)
+
+## Lab - Running your first anisble playbook
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat ping-playbook.yml
+ansible-playbook -i inventory ping-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/bb96316a-8da2-4686-9b11-d92c22fc3ca4)
