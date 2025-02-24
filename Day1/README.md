@@ -300,3 +300,8 @@ Expected output
 In the above screenshot, ansible reports certain tasks in green color, while some tasks are reported in yellow color.
 
 Both green and yellow indicate success in Ansible, but green means success that involved no changes on the remote ansible nodes.  Yellow means, it required modifying remote machine in the process of executing the task.
+
+Ansible and any configuration management tool supports Idempotent property.  No matter, how many times we run a playbook against a bunch of machines, the outcome will always be same.  First time when we run a playbook, because nginx wasn't present ansible installed nginx web servers onto those machines and reported them in yellow color.  Subsequent times when we execute the same playbook, ansible will report them in green color indicating ansible didn't make any changes on those machines as they are already in the expected state.
+
+Expected output
+![image](https://github.com/user-attachments/assets/d7e16858-5352-4737-9c33-3b73b617003f)
