@@ -1,5 +1,18 @@
 # Day 1
 
+## Info - Provisioning Tools Overview
+<pre>
+- these tools helps us declartively create Virtual machine in a on-prem, public or private cloud or in a hybrid cloud
+- these tools helps us provision storage in private, public or hybrid cloud environments
+- provision switches/routers
+- provisioning networks
+- examples
+  - AWS Cloudformation
+  - Terraform
+  - Docker
+  - Vagrant
+</pre>  
+
 ## Info - Configuration Management Tool Overview
 <pre>
 - assumption there is already a machine with some OS installed on it, on a already provisioned machine, configuration management tools can help automate the below activities
@@ -22,5 +35,4 @@
   - Chef
   - Salt/Salt Stack
   - Ansible
-
 </pre>
