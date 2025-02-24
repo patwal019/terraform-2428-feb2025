@@ -252,7 +252,7 @@ ansible all -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/6c1ad9a0-0c25-450d-b1ea-52df5517f336)
 
-## Lab - Running your first anisble playbook
+## Lab - Running your first ansible playbook
 ```
 cd ~/terraform-2428-feb2025
 git pull
