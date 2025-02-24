@@ -2,6 +2,7 @@
 
 ## Kindly proceed with pre-test on your RPS Lab Machine
 <pre>
+- Please do not use the RPS Cloud machine, you received for the demo session last week.  You would have received a new link for this week's training
 - Login to your RPS Cloud Machine
 - Using Chrome Web browser, proceed with the pre-test
 - You can find the pre-test link from the RPS Cloud Machine(Ubuntu) Desktop.  There will be an excel sheet with the link and login credentials for each one of you
