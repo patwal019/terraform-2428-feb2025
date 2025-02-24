@@ -284,3 +284,15 @@ ansible-playbook -i inventory ping-playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/7c6fef80-91aa-4486-b62c-f62c68f96fcb)
 ![image](https://github.com/user-attachments/assets/a7cff0fa-7301-4380-b198-d57f8dee0b38)
+
+## Lab - Install nginx playbook
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8acedee9-0e92-4e90-b0d0-c8ee78a05ad5)
