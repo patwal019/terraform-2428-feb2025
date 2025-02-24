@@ -194,4 +194,14 @@ docker ps
 Expected output
 ![image](https://github.com/user-attachments/assets/15bd853a-871b-4e0a-84b3-7e8ad06a8ef3)
 
+## Lab - Check if you are able to SSH into ubuntu1 ansible node container
+```
+ssh -p 2001 root@localhost
+exit
+ssh -p 2002 root@localhost
+exit
+```
+Expected output
+![image](https://github.com/user-attachments/assets/28238e84-eecc-4c1b-8201-f3e06c823b59)
+
 ## Lab - Creating a static inventory file
