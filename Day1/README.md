@@ -296,3 +296,53 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/8acedee9-0e92-4e90-b0d0-c8ee78a05ad5)
+
+In the above screenshot, ansible reports certain tasks in green color, while some tasks are reported in yellow color.
+
+Both green and yellow indicate success in Ansible, but green means success that involved no changes on the remote ansible nodes.  Yellow means, it required modifying remote machine in the process of executing the task.
+
+Ansible and any configuration management tool supports Idempotent property.  No matter, how many times we run a playbook against a bunch of machines, the outcome will always be same.  First time when we run a playbook, because nginx wasn't present ansible installed nginx web servers onto those machines and reported them in yellow color.  Subsequent times when we execute the same playbook, ansible will report them in green color indicating ansible didn't make any changes on those machines as they are already in the expected state.
+
+Expected output
+![image](https://github.com/user-attachments/assets/d7e16858-5352-4737-9c33-3b73b617003f)
+
+Accessing the web page 
+```
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Let's verify the current state of nginx service using ansible ad-hoc command
+```
+ansible -i inventory ubuntu1 -m shell -a "service nginx status"
+```
+![image](https://github.com/user-attachments/assets/11cf735c-d11f-4a53-ade4-fd973c6d9d94)
+
+Let's update the playbook to start the nginx service
+```
+- name: This playbook will install nginx, configures nginx to serve web pages from custom folder and deploys a custom web page
+  hosts: all
+  tasks:
+  - name: Install nginx in Ubuntu
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Start the nginx server
+    service: name=nginx state=started 
+```
+Run the playbook
+
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i inventory install-nginx-playbook.yml
+
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/9307324a-b98f-45ec-806c-b84624e7cf07)
+![image](https://github.com/user-attachments/assets/2fc54e0b-9a64-455a-9023-8e5780f859ba)
+![image](https://github.com/user-attachments/assets/4a6de8e7-73c0-434d-b551-c606b4a5aec3)
