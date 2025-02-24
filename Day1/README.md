@@ -296,3 +296,7 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/8acedee9-0e92-4e90-b0d0-c8ee78a05ad5)
+
+In the above screenshot, ansible reports certain tasks in green color, while some tasks are reported in yellow color.
+
+Both green and yellow indicate success in Ansible, but green means success that involved no changes on the remote ansible nodes.  Yellow means, it required modifying remote machine in the process of executing the task.
