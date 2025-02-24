@@ -26,4 +26,6 @@
   - Git/GitHub basics
   - Docker or container basics
   - What is the Jenkins, CI/CD, DevOps basics, etc.,
+- as per my understanding atleast 50% of the participants don't meet the pre-requisites, hence I'll try to cover the basics
+- the challenge is we may not be able to cover every topics agreed in the training agenda
 </pre>
