@@ -107,5 +107,46 @@
      - Red Hat is an IBM company
 </pre>
 
+
+## Info - Ansible ad-hoc command
+- ansible ad-hoc command is just invoking a single ansible module without writing a playbook
+- usually helps us understand what features a individual modules has, it is way we can experiment a module before using them in playbooks
+- each command just invokes one Ansible module
+
+## Info - Ansible Playbook
+- is a YAML file, hence can be written using any plain text editor of your choice
+- it follows a specific structure or format
+- each Playbook has one or more Play
+- each Play targets one to many hosts(ansible nodes to perform the automation)
+- each Play runs zero to many Tasks
+- each Task runs exactly one Ansible module
+- each Play runs zero to many Roles
+
+## Info - Ansible Controller Machine ( ACM )
+- the machine where Ansible is installed is called Ansible Controller Machine
+- officially only a Linux machine can be an Ansible Controller Machine
+- Windows machines can't be an Ansible Controller Machine
+- the machine where we run the ansible playbook is called Ansible Controller Machine
+
+## Info - Ansible Node ( these are the machines where Ansible will perform the automation )
+- it can be a Windows machine
+- it can be a Linux machine
+- it can be an unix machine
+- it can be a Mac machine
+- it can be Network routers/switches
+
+## Info - Ansible Inventory
+- it is a text file, who looks somewhat similar INI file
+- it has the connection details of Ansible Nodes
+- if the Ansible node happens to be a Window machine, then it will have WinRM connection details, login credentials, etc
+- if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
+
+## Info - Install Ansible in Ubuntu
+```
+sudo apt update
+sudo apt install software-properties-common
+udo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
 ## Info - Ansible High Level Architecture 
 ![Ansible](AnsibleHighLevelArchitecture.png)
