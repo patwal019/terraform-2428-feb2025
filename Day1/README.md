@@ -265,3 +265,9 @@ ansible-playbook -i inventory ping-playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/bb96316a-8da2-4686-9b11-d92c22fc3ca4)
+
+In the above screenshot, 
+- hosts is a section that tells ansible the targetted ansible node servers
+- under the tasks section, we have defined a single task
+- Ping ansible node is the task description which is optional, but it is best practice
+- ping: is the ansible module we are invoking as part of the task
