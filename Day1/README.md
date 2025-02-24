@@ -346,3 +346,43 @@ Expected output
 ![image](https://github.com/user-attachments/assets/9307324a-b98f-45ec-806c-b84624e7cf07)
 ![image](https://github.com/user-attachments/assets/2fc54e0b-9a64-455a-9023-8e5780f859ba)
 ![image](https://github.com/user-attachments/assets/4a6de8e7-73c0-434d-b551-c606b4a5aec3)
+
+Update the install-nginx-playbook.yml with the below content
+<pre>
+- name: This playbook will install nginx, configures nginx to serve web pages from custom folder and deploys a custom web page
+  hosts: all
+  tasks:
+  - name: Install nginx in Ubuntu
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Start the nginx server in Ubuntu
+    service: name=nginx state=started 
+
+  - name: Create the custom web root folder
+    file: path=/var/html state=directory mode=0777
+
+  - name: Configure nginx server to serve html pages from our custom folder in Ubuntu
+    copy: src=default dest=/etc/nginx/sites-available/default
+
+  - name: Restart nginx service to apply the config changes
+    service: name=nginx state=restarted
+
+  - name: Deploy custom html page
+    copy: src=index.html dest=/var/html/index.html  
+</pre>
+
+You can run the playbook as shown below
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i inventory install-nginx-playbook.yml
+
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/93e27705-996f-4d66-a413-53c42087f6ea)
+
