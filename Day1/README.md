@@ -160,7 +160,25 @@ sudo apt install ansible
 ## Info - Ansible High Level Architecture 
 ![Ansible](AnsibleHighLevelArchitecture.png)
 
-## Lab - Build Custom Docker images to create ansible node containers
+## Lab - Build Custom Ubuntu Docker images to create ansible node containers
+Let's create a key pair ( public and private ) keys
+```
+ssh-keygen
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/711f2733-f19e-451b-87b2-b13a661a4731)
+
+
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/CustomDockerAnsibleNodeImages/ubuntu-ansible
+cp ~/.ssh/ed25519.pub authorized_keys
+docker build -t tektutor/ubuntu-ansible-node:1.0 .
+rm authorized_keys
+docker images
+```
 
 
 ## Lab - Creating a static inventory file
