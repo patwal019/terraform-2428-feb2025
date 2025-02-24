@@ -216,3 +216,18 @@ ansible -i hosts all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/c6e969d5-d6d2-4bcf-8091-2ef6e3daa3ab)
+
+## Lab - Dynamic inventory file
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day1/dynamic-inventory
+cat ./dynamic-inventory.py
+ansible -i ./dynamic-inventory.py all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/e34d3efb-53c1-43b2-adca-2cc893cb54cb)
+![image](https://github.com/user-attachments/assets/31e00186-ab52-4f19-816d-0992fda167d3)
+![image](https://github.com/user-attachments/assets/f64abf03-0ce2-4e86-9a54-0ba10dffc1b2)
+![image](https://github.com/user-attachments/assets/2907e3cb-ff33-4a56-8bb9-ecd1f7246369)
