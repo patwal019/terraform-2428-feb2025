@@ -16,6 +16,8 @@
 - One should know how to install,uninstall,update/upgrade software tools in Linux
 - One should be aware 
   - how SSH works, Powershell basics
+  - knows_hosts, public/private keys, authorized_keys, etc.,
+  - have some programming background
   - SCP/SFTP basics
   - navigating to folders from linux terminal
   - package manager
