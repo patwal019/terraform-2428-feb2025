@@ -37,3 +37,52 @@
   - Salt/Salt Stack
   - Ansible
 </pre>
+
+## Info - Puppet Overview
+<pre>
+- is one of the oldest configuration management tool
+- uses its own proprietary declarative language called Puppet language to write automation scripts
+- follows client/server architecture
+- DSL(Domain Specific Language) - language used to write the automation 
+- DSL - Puppet Language
+- follows Pull based architecture
+- installing Puppet is a complex activity
+- learning curve is also steep
+- a special Puppet agent must be installed on all servers that must be managed by Puppet
+- comes in two flavours
+  - opensource
+  - enterprise product
+</pre>
+
+## Info - Chef Overview
+<pre>
+- chef is one of the very popular configuration management tools available in the market
+- follows client/server and pull based architecture
+- DSL used in Chef is Ruby scripting language
+- installation and learning is quite difficult
+- Chef comes with many tools, hence mastering chef takes very long time
+- architecture wise, somewhat similar to Puppet
+- a special Chef agent must be installed on all servers that must be managed by Chef
+</pre>
+
+## Info - Ansible Overview
+<pre>
+- is the youngest configuration management tool 
+- it is developed in Python by Michael Deehan
+- Michael Deehaan is a x employee of Red Hat
+- Michael Deehan started a company called Ansible Inc, Ansible core was developed as an open source product
+- Ansible follows a very simple architecture
+- Installation of Ansible is very easy
+- Easy to learn and master Ansible
+- Ansible is agent-less
+- Ansible comes in 3 flavours
+  1. Ansible Core - opensource product, supports only command line interface
+  2. AWX - open source product developed on top of Ansible Core, supports Web Interface
+  3. Red Hat Ansible Automation Platform ( earlier called as Ansible Tower )
+     - developed on top of the open source AWX
+     - supports web interface
+     - also can expect world-wide support
+     - Red Hat is an IBM company
+</pre>
+
+## Info - Ansible High Level Architecture 
