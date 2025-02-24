@@ -2,6 +2,7 @@
 
 ## Info - Provisioning Tools Overview
 <pre>
+- Infrastructure as a code tool (IaaC)
 - these tools helps us declartively create Virtual machine in a on-prem, public or private cloud or in a hybrid cloud
 - these tools helps us provision storage in private, public or hybrid cloud environments
 - provision switches/routers
