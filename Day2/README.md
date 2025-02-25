@@ -168,3 +168,15 @@ cat mysql-login-credentials.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/5655bd9d-f50a-4825-ae4b-b9093c083305)
 ![image](https://github.com/user-attachments/assets/56190462-a523-43b7-b114-aae0606d68c6)
+
+## Info - Ansible Automation Platform
+<pre>
+- was called Ansible Tower earlier
+- comes in 2 flavours
+  - AWX ( open source )
+    - this is developed on top of Ansible core opensource
+    - this supports web interface
+  - Red Hat Ansible Automation Platform ( enterprise - commercial product )
+    - this is developed on top of opensource AWX
+    - this supports web interface
+</pre>
