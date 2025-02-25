@@ -180,3 +180,18 @@ Expected output
     - this is developed on top of opensource AWX
     - this supports web interface
 </pre>
+
+## Lab - Launching AWX - Ansible Tower opensource variant
+```
+minikube start
+kubectl get nodes
+minikube service awx-demo-service --url -n ansible-awx
+```
+
+To retrieve AWX password ( save the password in a file to avoid typing this lengthy command each time )
+```
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/148c0187-52a5-40b8-af99-2beaa8391c36)
