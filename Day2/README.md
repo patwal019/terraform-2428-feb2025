@@ -204,3 +204,17 @@ http://192.168.49.2:31225
 Expected output
 ![image](https://github.com/user-attachments/assets/d4f5e833-2a2a-40e8-aee6-242004934de0)
 ![image](https://github.com/user-attachments/assets/3ab099d8-58b7-4523-a634-35437e289b94)
+
+## Lab - Creating credential to store the private key file
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+Click "Resource --> Credentials"
+![image](https://github.com/user-attachments/assets/2b7246c9-4bf7-45d1-94aa-497d5d3c21fe)
+Click "Add"
+![image](https://github.com/user-attachments/assets/a8631719-e941-4715-80b5-5ed3b7d1ce8d)
+![image](https://github.com/user-attachments/assets/cfdca274-081d-4d75-b134-cc873541bcac)
+![image](https://github.com/user-attachments/assets/cfd87474-634e-46b6-bdfe-c805ad2c3cde)
+![image](https://github.com/user-attachments/assets/b8b2646b-ae5a-4189-9692-97d890476896)
+![image](https://github.com/user-attachments/assets/186e739f-a9b8-4260-9059-e623c40b4dff)
+Click "Save"
+![image](https://github.com/user-attachments/assets/a8127662-542c-403e-8917-38abc4631227)
