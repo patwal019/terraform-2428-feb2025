@@ -64,3 +64,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/b2fa4278-fac6-4317-899f-08e395f3998b)
 ![image](https://github.com/user-attachments/assets/9e30a343-72a9-44a9-b1b2-7c103e8b6520)
 ![image](https://github.com/user-attachments/assets/38e748af-754f-415f-9b04-69352d755373)
+
+## Info - Ansible roles
+<pre>
+- is a way we can resue code in Ansible
+- it follows certain directory structure and coding practices
+- roles can't be executed directly
+- roles can be invoked in playbook
+- when we execute playbook,it can invoke one or more roles
+- generally one ansible role, will install one software
+- to develop ansible role, we will be using a tool called ansible-galaxy
+- there is also a web portal from where we can download and use opensource roles written by community
+</pre>
