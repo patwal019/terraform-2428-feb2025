@@ -370,3 +370,31 @@ go run ./hello.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/af1f5b7f-00c0-4d47-a52e-61a71284639f)
+
+## Lab - Variables in golang
+Create a file named variables.go with the below content
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+	var inventor1 = "Ken Thompson"  //Declares a string implicitly and initial with some value
+	inventor2  := "Rob Pile"        //Declares string variable initializing with some variable
+	var inventor3 string            //Declares a string variable without initializing 
+	inventor3 = "Robert Griesemer"  //initializing the string variable with a value
+
+	fmt.Println ( "Golang inventors" )
+	fmt.Println ( inventor1 )
+	fmt.Println ( inventor2 )
+	fmt.Println ( inventor3 )
+}  
+</pre>
+
+Run the program
+```
+go run ./variables.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/96a1477a-6bc8-46f4-8298-b982dc223f27)
