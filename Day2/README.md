@@ -255,3 +255,14 @@ Select "Add Inventory"
 ![image](https://github.com/user-attachments/assets/1e39edb9-7d08-430a-9adc-8aa858dd3fc2)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/32bccb46-3fd5-4266-bf17-ad79c37189b2)
+
+Click "Hosts" Tab within the Inventory we created
+![image](https://github.com/user-attachments/assets/f8100566-4c99-46ce-b74e-9bad538d10b5)
+Click "Add"
+![image](https://github.com/user-attachments/assets/50b825a1-669c-4f96-98a5-5e8fd30ba8c1)
+![image](https://github.com/user-attachments/assets/c62255ac-d0ad-4c13-b624-5d63259a4c40)
+Click "Save"
+![image](https://github.com/user-attachments/assets/e1679c16-1a45-46de-a5b9-438f4ff70319)
+
+Let's add Ubuntu2 Hosts
+Click "Add"
