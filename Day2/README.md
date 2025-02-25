@@ -222,3 +222,21 @@ cat ~/.ssh/id_ed25519
 ![image](https://github.com/user-attachments/assets/186e739f-a9b8-4260-9059-e623c40b4dff)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/a8127662-542c-403e-8917-38abc4631227)
+
+## Lab - Let's create a project in Ansible Tower
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+
+Click "Resource --> Projects"
+![image](https://github.com/user-attachments/assets/e8d12363-73b5-4ad0-ab83-dfa51a15f437)
+Click "Add"
+![image](https://github.com/user-attachments/assets/4a3fd653-53af-4a76-a113-fa7a3a1ac53d)
+![image](https://github.com/user-attachments/assets/111ab649-4f27-4669-81ac-51f81451c234)
+Select "Git"
+![image](https://github.com/user-attachments/assets/b89b0667-e1aa-43c2-a6ff-d9f6b6a63296)
+![image](https://github.com/user-attachments/assets/05db3e4b-4cd2-43e0-8406-67cf779ee202)
+Click "Save"
+![image](https://github.com/user-attachments/assets/b7c949cb-02e2-42be-85b2-1f9d43a22504)
+![image](https://github.com/user-attachments/assets/6489c52b-b7c6-4010-88eb-7f3595d6f28c)
+![image](https://github.com/user-attachments/assets/c607344b-bfe8-40db-9b04-6fa92721d6e6)
+![image](https://github.com/user-attachments/assets/27ad7838-c423-45cf-996b-278e91df0d05)
