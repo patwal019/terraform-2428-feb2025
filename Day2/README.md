@@ -213,6 +213,10 @@ Click "Resource --> Credentials"
 Click "Add"
 ![image](https://github.com/user-attachments/assets/a8631719-e941-4715-80b5-5ed3b7d1ce8d)
 ![image](https://github.com/user-attachments/assets/cfdca274-081d-4d75-b134-cc873541bcac)
+To print the private key ( type this command in your terminal )
+```
+cat ~/.ssh/id_ed25519
+```
 ![image](https://github.com/user-attachments/assets/cfd87474-634e-46b6-bdfe-c805ad2c3cde)
 ![image](https://github.com/user-attachments/assets/b8b2646b-ae5a-4189-9692-97d890476896)
 ![image](https://github.com/user-attachments/assets/186e739f-a9b8-4260-9059-e623c40b4dff)
