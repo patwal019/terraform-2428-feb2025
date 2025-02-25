@@ -285,3 +285,31 @@ Click "Add"
 Click "Save"
 ![image](https://github.com/user-attachments/assets/8ae01dbc-69a5-4522-bf6d-2c1be2a60f2d)
 ![image](https://github.com/user-attachments/assets/5d1a7df8-3fd7-4ad1-bd18-1df5d120236c)
+
+
+## Lab - Let's create Template to run an Ansible Playbook in Ansible Tower
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+
+Click "Resource --> Templates"
+![image](https://github.com/user-attachments/assets/df29b26f-9808-4a44-ae4c-2d1f1e387173)
+Click "Add"
+![image](https://github.com/user-attachments/assets/a02636a5-53c7-41f3-adac-f7252220b359)
+Select "Add Job template"
+![image](https://github.com/user-attachments/assets/82cd3440-0c2a-4a37-bd5f-30113ce069fe)
+Search and Select Inventory "Docker Inventory"
+![image](https://github.com/user-attachments/assets/7702e175-2648-411b-b264-be4db7246e0c)
+Search and Select Project "TekTutor Training Repositoyr"
+![image](https://github.com/user-attachments/assets/78d83e59-4fc5-4f55-a0c5-cbefee30f594)
+![image](https://github.com/user-attachments/assets/f3e94196-dc8d-4cea-87e5-16bac0499dbe)
+![image](https://github.com/user-attachments/assets/dcbba9fb-dd0d-41ac-b7b8-987456c717b5)
+Under Playbook, select "Day2/ansible/after-refactoring-playbook/install-nginx-playbook.yml
+![image](https://github.com/user-attachments/assets/dcfd607c-11af-49ac-b763-8bbc65cb5f85)
+
+Under Credentials, 
+![image](https://github.com/user-attachments/assets/bdec8a60-635f-4471-8dd6-23e4efd56caa)
+Select "PrivateKey"
+![image](https://github.com/user-attachments/assets/78c4a4ea-01d6-48da-81be-de4ae04c2ad4)
+![image](https://github.com/user-attachments/assets/ced637b4-2ea7-489b-b8ca-878589d5f212)
+Click "Save"
+![image](https://github.com/user-attachments/assets/d5885161-080c-4263-82eb-bc3fb70c44ab)
