@@ -50,3 +50,17 @@ ansible all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/c4c8270a-fc33-4970-9a2f-90f3738e9440)
+
+
+## Lab - Let's run the refactored playbook which install nginx on rocky and ubuntu based ansible nodes
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day2/ansible
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b2fa4278-fac6-4317-899f-08e395f3998b)
+![image](https://github.com/user-attachments/assets/9e30a343-72a9-44a9-b1b2-7c103e8b6520)
+![image](https://github.com/user-attachments/assets/38e748af-754f-415f-9b04-69352d755373)
