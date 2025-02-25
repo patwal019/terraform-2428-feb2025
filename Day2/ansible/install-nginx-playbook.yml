@@ -2,19 +2,39 @@
   hosts: all
   tasks:
   - name: Install nginx in Ubuntu
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     apt: name=nginx state=latest update_cache=yes
 
+  - name: Install Extra Packages for Enterprise Linux (EPEL) release packages in Rocky
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    yum: name=epel-release state=latest 
+
+  - name: Install nginx in Rocky 
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    yum: name=nginx state=latest 
+
   - name: Start the nginx server in Ubuntu
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     service: name=nginx state=started 
+
+  - name: Check if nginx server is already running in Rocky
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    shell: curl http://localhost
+    register: output
+    ignore_errors: yes
+
+  - debug: var=output
+
+  - name: Start the nginx server in Rocky 
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" and output.rc != 0 )
+    shell: nginx
 
   - name: Create the custom web root folder
     file: path=/var/html state=directory mode=0777
 
   - name: Configure nginx server to serve html pages from our custom folder in Ubuntu
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     copy: src=default dest=/etc/nginx/sites-available/default
-
-  - name: Restart nginx service to apply the config changes
-    service: name=nginx state=restarted
 
   - name: Deploy custom html page
     copy: src=index.html dest=/var/html/index.html
