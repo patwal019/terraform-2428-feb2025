@@ -1,0 +1,7 @@
+- name: Demonstrates using vault protected data in a playbook
+  hosts: localhost
+  vars_files:
+  - mysql-login-credentials.yml
+  tasks:
+  - debug: msg="username - {{username}}, password  - {{password}}"
+    
