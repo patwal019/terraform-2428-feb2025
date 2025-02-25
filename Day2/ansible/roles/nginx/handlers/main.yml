@@ -1,0 +1,7 @@
+---
+# handlers file for nginx
+- name: Restart the nginx server to apply config changes in Rocky 
+  shell: nginx -s stop && nginx
+
+- name: Restart the nginx server to apply config changes in Ubuntu
+  service: name=nginx state=restarted 

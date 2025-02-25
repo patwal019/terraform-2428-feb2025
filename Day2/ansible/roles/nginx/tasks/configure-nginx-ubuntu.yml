@@ -1,0 +1,4 @@
+- name: Configure nginx server to serve html pages from our custom folder in Ubuntu
+  copy: src=default dest=/etc/nginx/sites-available/default
+  notify:
+  - Restart the nginx server to apply config changes in Ubuntu 
