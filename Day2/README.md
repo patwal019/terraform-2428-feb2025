@@ -76,3 +76,28 @@ Expected output
 - to develop ansible role, we will be using a tool called ansible-galaxy
 - there is also a web portal from where we can download and use opensource roles written by community
 </pre>
+
+## Lab - Creating a custom Ansible role
+<pre>
+cd ~/terraform-2428-feb2025
+git pull
+cd Day2/ansible/roles
+ansible-galaxy init nginx
+tree nginx
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/476a7b87-f76b-46d9-8684-7317c0edb87f)
+
+In the above screenshot,
+<pre>
+vars - captures user-defined variables
+defaults - also captures user-defined variables which are normally read-only variables
+files - the src files referred by the ansible file modules will be maintained here
+handlers - this folder maintains code related to managing services, these tasks will be invoked based on some notifications
+meta - has documentation that explains about the roles, the platforms(OS) supported by the roles, author, license under which the role is published
+README.md - documentation
+tasks - this folder will have all the code we normally write in an ansible playbook
+templates - this folder has files referred by the template module
+tests - has test inventory and test playbook that demonstrates on how one can invoke custom ansible role
+</pre>
