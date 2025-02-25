@@ -157,7 +157,6 @@ Expected output
 
 Accessing vault protected file from a playbook
 ```
-```
 cd ~/terraform-2428-feb2025
 git pull
 cd Day2/ansible/vault
