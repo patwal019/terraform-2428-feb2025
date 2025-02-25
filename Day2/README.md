@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/cc34584e-07b1-4ce1-80c9-f0fe33a075d9)# Day 2
 
 ## Lab - Building a custom Rocky linux ansible node container image
 ```
@@ -241,3 +241,17 @@ Click "Save"
 ![image](https://github.com/user-attachments/assets/c607344b-bfe8-40db-9b04-6fa92721d6e6)
 ![image](https://github.com/user-attachments/assets/27ad7838-c423-45cf-996b-278e91df0d05)
 ![image](https://github.com/user-attachments/assets/6745431e-9059-4a3c-9604-066e85cf744b)
+
+## Lab - Creating an Inventory in Ansible Tower
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+
+Click "Resource --> Inventories"
+![image](https://github.com/user-attachments/assets/68a674aa-4a19-4b36-9d7c-eef082f47417)
+Click "Add"
+![image](https://github.com/user-attachments/assets/52012c2b-d80c-4e5f-a7ba-001c1351059b)
+Select "Add Inventory"
+![image](https://github.com/user-attachments/assets/524e97d0-ef79-46ca-b75d-e04e4a63bdbe)
+![image](https://github.com/user-attachments/assets/1e39edb9-7d08-430a-9adc-8aa858dd3fc2)
+Click "Save"
+![image](https://github.com/user-attachments/assets/32bccb46-3fd5-4266-bf17-ad79c37189b2)
