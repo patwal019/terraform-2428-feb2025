@@ -52,7 +52,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c4c8270a-fc33-4970-9a2f-90f3738e9440)
 
 
-## Lab - Let's run the refactored playbook which install nginx on rocky and ubuntu based ansible nodes
+## Lab - Let's run the refactored playbook that installs nginx on rocky and ubuntu based ansible nodes
 ```
 cd ~/terraform-2428-feb2025
 git pull
