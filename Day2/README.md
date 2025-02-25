@@ -284,3 +284,4 @@ Click "Add"
 ![image](https://github.com/user-attachments/assets/e7c92359-4625-422a-b101-6ade0f715a4f)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/8ae01dbc-69a5-4522-bf6d-2c1be2a60f2d)
+![image](https://github.com/user-attachments/assets/5d1a7df8-3fd7-4ad1-bd18-1df5d120236c)
