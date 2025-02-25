@@ -124,3 +124,48 @@ Expected output
 ![image](https://github.com/user-attachments/assets/306f8ed5-f5ac-4f98-8b54-d448d26b283f)
 ![image](https://github.com/user-attachments/assets/5d0fb005-8dba-48d4-ad10-592579ef46c4)
 
+## Info - Ansible error handling
+Refer https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_error_handling.html
+
+## Info - Ansible variable precedence
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html
+
+## Lab - Ansible vault
+<pre>
+- ansible vault helps us protect sensitive data like login credentials, public/private keys, etc by encrypting with a password
+- the password protected ansible vault file data can be securely accessed from playbooks
+- Hashicorp vault is an alternate to Ansible vault
+</pre>
+
+Creating a vault protected file, when prompts for password type any password
+```
+ansible-vault create mysql-login-credentials.yml
+cat mysql-login-credentials.yml
+ansible-vault view mysql-login-credentials.yml
+ansible-vault edit mysql-login-credentials.yml
+ansible-vault decrypt mysql-login-credentials.yml
+ansible-vault encrypt mysql-login-credentials.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a0b70c3a-84c3-440d-9063-e7e7be5ea49d)
+![image](https://github.com/user-attachments/assets/7692a7b5-f676-4c40-b3c0-ce6724723b5a)
+![image](https://github.com/user-attachments/assets/555b6949-3eba-457c-8840-4baa92d425c7)
+![image](https://github.com/user-attachments/assets/52a62bca-d116-484a-b303-d123dff9ce9e)
+![image](https://github.com/user-attachments/assets/2ceb1285-7e65-4032-be0d-9b2976f2b720)
+
+
+Accessing vault protected file from a playbook
+```
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day2/ansible/vault
+cat mysql-login-credentials.yml
+ansible-playbook playbook --ask-vault-pass
+cat mysql-login-credentials.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5655bd9d-f50a-4825-ae4b-b9093c083305)
+![image](https://github.com/user-attachments/assets/56190462-a523-43b7-b114-aae0606d68c6)
