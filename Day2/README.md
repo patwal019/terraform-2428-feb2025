@@ -26,3 +26,15 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/0a769789-5ff5-4f4d-94b5-3e2d5e078c0b)
+
+## Lab - Try to connect to rocky1 and rocky2 ansible node container via SSH
+```
+ssh -p 2003 root@localhost
+exit
+
+ssh -p 2004 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/162b811a-aab4-4696-8e0c-85645de10f6d)
