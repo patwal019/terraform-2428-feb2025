@@ -124,3 +124,5 @@ Expected output
 ![image](https://github.com/user-attachments/assets/306f8ed5-f5ac-4f98-8b54-d448d26b283f)
 ![image](https://github.com/user-attachments/assets/5d0fb005-8dba-48d4-ad10-592579ef46c4)
 
+## Info - Ansible error handling
+Refer https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_error_handling.html
