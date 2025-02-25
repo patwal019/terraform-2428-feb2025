@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/cc34584e-07b1-4ce1-80c9-f0fe33a075d9)# Day 2
+# Day 2
 
 ## Lab - Building a custom Rocky linux ansible node container image
 ```
@@ -180,6 +180,9 @@ Expected output
     - this is developed on top of opensource AWX
     - this supports web interface
 </pre>
+
+Info - Installing Ansible Tower (AWX)
+https://medium.com/@jegan_50867/installing-ansible-tower-awx-e46d5231357d
 
 ## Lab - Launching AWX - Ansible Tower opensource variant
 ```
