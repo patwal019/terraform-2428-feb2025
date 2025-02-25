@@ -266,3 +266,21 @@ Click "Save"
 
 Let's add Ubuntu2 Hosts
 Click "Add"
+![image](https://github.com/user-attachments/assets/2111a1ba-f991-4c86-98a6-a8d195d71642)
+Click "Save"
+![image](https://github.com/user-attachments/assets/98510b92-6893-4e6b-a082-9ef1b5ebeca2)
+
+
+Let's add Rocky1 Host
+Click "Add"
+![image](https://github.com/user-attachments/assets/679a2346-02e5-4f00-9ed5-e458a43ff298)
+![image](https://github.com/user-attachments/assets/d36a2683-bec3-42ec-bc9c-34aa36358763)
+Click "Save"
+![image](https://github.com/user-attachments/assets/d4695dda-3dd8-4334-8bcb-d2f0f6418650)
+
+Let's add Rocky2 host
+![image](https://github.com/user-attachments/assets/4a568e5c-ca4a-46d8-a74a-584cedd0dfb4)
+Click "Add"
+![image](https://github.com/user-attachments/assets/e7c92359-4625-422a-b101-6ade0f715a4f)
+Click "Save"
+![image](https://github.com/user-attachments/assets/8ae01dbc-69a5-4522-bf6d-2c1be2a60f2d)
