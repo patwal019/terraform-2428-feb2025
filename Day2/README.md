@@ -126,3 +126,6 @@ Expected output
 
 ## Info - Ansible error handling
 Refer https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_error_handling.html
+
+## Info - Ansible variable precedence
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html
