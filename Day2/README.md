@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/cc34584e-07b1-4ce1-80c9-f0fe33a075d9)# Day 2
 
 ## Lab - Building a custom Rocky linux ansible node container image
 ```
@@ -157,7 +157,6 @@ Expected output
 
 Accessing vault protected file from a playbook
 ```
-```
 cd ~/terraform-2428-feb2025
 git pull
 cd Day2/ansible/vault
@@ -169,3 +168,148 @@ cat mysql-login-credentials.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/5655bd9d-f50a-4825-ae4b-b9093c083305)
 ![image](https://github.com/user-attachments/assets/56190462-a523-43b7-b114-aae0606d68c6)
+
+## Info - Ansible Automation Platform
+<pre>
+- was called Ansible Tower earlier
+- comes in 2 flavours
+  - AWX ( open source )
+    - this is developed on top of Ansible core opensource
+    - this supports web interface
+  - Red Hat Ansible Automation Platform ( enterprise - commercial product )
+    - this is developed on top of opensource AWX
+    - this supports web interface
+</pre>
+
+## Lab - Launching AWX - Ansible Tower opensource variant
+```
+minikube start
+kubectl get nodes
+minikube service awx-demo-service --url -n ansible-awx
+```
+
+To retrieve AWX password ( save the password in a file to avoid typing this lengthy command each time )
+```
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/148c0187-52a5-40b8-af99-2beaa8391c36)
+
+AWX Tower Dashboard can be accessed at the below url
+<pre>
+http://192.168.49.2:31225  
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/d4f5e833-2a2a-40e8-aee6-242004934de0)
+![image](https://github.com/user-attachments/assets/3ab099d8-58b7-4523-a634-35437e289b94)
+
+## Lab - Creating credential to store the private key file
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+Click "Resource --> Credentials"
+![image](https://github.com/user-attachments/assets/2b7246c9-4bf7-45d1-94aa-497d5d3c21fe)
+Click "Add"
+![image](https://github.com/user-attachments/assets/a8631719-e941-4715-80b5-5ed3b7d1ce8d)
+![image](https://github.com/user-attachments/assets/cfdca274-081d-4d75-b134-cc873541bcac)
+To print the private key ( type this command in your terminal )
+```
+cat ~/.ssh/id_ed25519
+```
+![image](https://github.com/user-attachments/assets/cfd87474-634e-46b6-bdfe-c805ad2c3cde)
+![image](https://github.com/user-attachments/assets/b8b2646b-ae5a-4189-9692-97d890476896)
+![image](https://github.com/user-attachments/assets/186e739f-a9b8-4260-9059-e623c40b4dff)
+Click "Save"
+![image](https://github.com/user-attachments/assets/a8127662-542c-403e-8917-38abc4631227)
+
+## Lab - Let's create a project in Ansible Tower
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+
+Click "Resource --> Projects"
+![image](https://github.com/user-attachments/assets/e8d12363-73b5-4ad0-ab83-dfa51a15f437)
+Click "Add"
+![image](https://github.com/user-attachments/assets/4a3fd653-53af-4a76-a113-fa7a3a1ac53d)
+![image](https://github.com/user-attachments/assets/111ab649-4f27-4669-81ac-51f81451c234)
+Select "Git"
+![image](https://github.com/user-attachments/assets/b89b0667-e1aa-43c2-a6ff-d9f6b6a63296)
+![image](https://github.com/user-attachments/assets/05db3e4b-4cd2-43e0-8406-67cf779ee202)
+Click "Save"
+![image](https://github.com/user-attachments/assets/b7c949cb-02e2-42be-85b2-1f9d43a22504)
+![image](https://github.com/user-attachments/assets/6489c52b-b7c6-4010-88eb-7f3595d6f28c)
+![image](https://github.com/user-attachments/assets/c607344b-bfe8-40db-9b04-6fa92721d6e6)
+![image](https://github.com/user-attachments/assets/27ad7838-c423-45cf-996b-278e91df0d05)
+![image](https://github.com/user-attachments/assets/6745431e-9059-4a3c-9604-066e85cf744b)
+
+## Lab - Creating an Inventory in Ansible Tower
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+
+Click "Resource --> Inventories"
+![image](https://github.com/user-attachments/assets/68a674aa-4a19-4b36-9d7c-eef082f47417)
+Click "Add"
+![image](https://github.com/user-attachments/assets/52012c2b-d80c-4e5f-a7ba-001c1351059b)
+Select "Add Inventory"
+![image](https://github.com/user-attachments/assets/524e97d0-ef79-46ca-b75d-e04e4a63bdbe)
+![image](https://github.com/user-attachments/assets/1e39edb9-7d08-430a-9adc-8aa858dd3fc2)
+Click "Save"
+![image](https://github.com/user-attachments/assets/32bccb46-3fd5-4266-bf17-ad79c37189b2)
+
+Click "Hosts" Tab within the Inventory we created
+![image](https://github.com/user-attachments/assets/f8100566-4c99-46ce-b74e-9bad538d10b5)
+Click "Add"
+![image](https://github.com/user-attachments/assets/50b825a1-669c-4f96-98a5-5e8fd30ba8c1)
+![image](https://github.com/user-attachments/assets/c62255ac-d0ad-4c13-b624-5d63259a4c40)
+Click "Save"
+![image](https://github.com/user-attachments/assets/e1679c16-1a45-46de-a5b9-438f4ff70319)
+
+Let's add Ubuntu2 Hosts
+Click "Add"
+![image](https://github.com/user-attachments/assets/2111a1ba-f991-4c86-98a6-a8d195d71642)
+Click "Save"
+![image](https://github.com/user-attachments/assets/98510b92-6893-4e6b-a082-9ef1b5ebeca2)
+
+
+Let's add Rocky1 Host
+Click "Add"
+![image](https://github.com/user-attachments/assets/679a2346-02e5-4f00-9ed5-e458a43ff298)
+![image](https://github.com/user-attachments/assets/d36a2683-bec3-42ec-bc9c-34aa36358763)
+Click "Save"
+![image](https://github.com/user-attachments/assets/d4695dda-3dd8-4334-8bcb-d2f0f6418650)
+
+Let's add Rocky2 host
+![image](https://github.com/user-attachments/assets/4a568e5c-ca4a-46d8-a74a-584cedd0dfb4)
+Click "Add"
+![image](https://github.com/user-attachments/assets/e7c92359-4625-422a-b101-6ade0f715a4f)
+Click "Save"
+![image](https://github.com/user-attachments/assets/8ae01dbc-69a5-4522-bf6d-2c1be2a60f2d)
+![image](https://github.com/user-attachments/assets/5d1a7df8-3fd7-4ad1-bd18-1df5d120236c)
+
+
+## Lab - Let's create Template to run an Ansible Playbook in Ansible Tower
+Navigate to AWX Dashboard
+![image](https://github.com/user-attachments/assets/3a203648-2d3f-43d1-8597-c3e7d043237b)
+
+Click "Resource --> Templates"
+![image](https://github.com/user-attachments/assets/df29b26f-9808-4a44-ae4c-2d1f1e387173)
+Click "Add"
+![image](https://github.com/user-attachments/assets/a02636a5-53c7-41f3-adac-f7252220b359)
+Select "Add Job template"
+![image](https://github.com/user-attachments/assets/82cd3440-0c2a-4a37-bd5f-30113ce069fe)
+Search and Select Inventory "Docker Inventory"
+![image](https://github.com/user-attachments/assets/7702e175-2648-411b-b264-be4db7246e0c)
+Search and Select Project "TekTutor Training Repositoyr"
+![image](https://github.com/user-attachments/assets/78d83e59-4fc5-4f55-a0c5-cbefee30f594)
+![image](https://github.com/user-attachments/assets/f3e94196-dc8d-4cea-87e5-16bac0499dbe)
+![image](https://github.com/user-attachments/assets/dcbba9fb-dd0d-41ac-b7b8-987456c717b5)
+Under Playbook, select "Day2/ansible/after-refactoring-playbook/install-nginx-playbook.yml
+![image](https://github.com/user-attachments/assets/dcfd607c-11af-49ac-b763-8bbc65cb5f85)
+
+Under Credentials, 
+![image](https://github.com/user-attachments/assets/bdec8a60-635f-4471-8dd6-23e4efd56caa)
+Select "PrivateKey"
+![image](https://github.com/user-attachments/assets/78c4a4ea-01d6-48da-81be-de4ae04c2ad4)
+![image](https://github.com/user-attachments/assets/ced637b4-2ea7-489b-b8ca-878589d5f212)
+Click "Save"
+![image](https://github.com/user-attachments/assets/d5885161-080c-4263-82eb-bc3fb70c44ab)
