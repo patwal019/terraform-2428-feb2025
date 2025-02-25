@@ -101,3 +101,26 @@ tasks - this folder will have all the code we normally write in an ansible playb
 templates - this folder has files referred by the template module
 tests - has test inventory and test playbook that demonstrates on how one can invoke custom ansible role
 </pre>
+
+## Lab - Invoking custom role from Ansible Playbook
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day2/ansible/roles
+ansible-playbook playbook.yml
+
+curl http://localhost:8001
+curl http://localhost:8002
+curl http://localhost:8003
+curl http://localhost:8004
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c2c07f1c-b7a7-44b0-b540-1696b0398352)
+![image](https://github.com/user-attachments/assets/1f3518f5-0ff0-412c-907a-46932949cc0a)
+![image](https://github.com/user-attachments/assets/bf06652b-6845-45c3-809e-69538203afbc)
+![image](https://github.com/user-attachments/assets/a3ffc956-04b7-47d0-bfbd-8b1ebb42d2c2)
+![image](https://github.com/user-attachments/assets/6187c9de-584e-4e1d-bea8-5aba08e3b089)
+![image](https://github.com/user-attachments/assets/306f8ed5-f5ac-4f98-8b54-d448d26b283f)
+![image](https://github.com/user-attachments/assets/5d0fb005-8dba-48d4-ad10-592579ef46c4)
+
