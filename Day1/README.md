@@ -1,11 +1,5 @@
 # Day 1
 
-## Kindly provide your first day feedback ( Do it from RPS cloud ubuntu machine chrome browser )
-<pre>
-https://survey.zohopublic.com/zs/QaEBQK
-</pre>  
-
-
 ## Linux Repository Servers
 <pre>
 - Repository Servers are FTP Servers that maintained multiple opensource installer packages that works on many different Linux versions
