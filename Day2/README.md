@@ -195,3 +195,12 @@ kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ans
 
 Expected output
 ![image](https://github.com/user-attachments/assets/148c0187-52a5-40b8-af99-2beaa8391c36)
+
+AWX Tower Dashboard can be accessed at the below url
+<pre>
+http://192.168.49.2:31225  
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/d4f5e833-2a2a-40e8-aee6-242004934de0)
+![image](https://github.com/user-attachments/assets/3ab099d8-58b7-4523-a634-35437e289b94)
