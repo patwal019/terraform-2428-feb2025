@@ -325,9 +325,11 @@ Click "Save"
 ## Info - Golang Overview
 <pre>
 - is developed Google in C programming language
+- it is an opensource project
 - it is compiled language
 - it is strongly typed
 - when golang was developed, the inventors wanted to keep it simple and support only relevant unambiguous features
+- golang supports about 25 keywords in total
 - golang supports many built-in data types
   - int, int8, int16,int32, int64
   - byte,
