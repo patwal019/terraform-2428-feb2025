@@ -69,7 +69,7 @@ Expected output
 <pre>
 - is a way we can resue code in Ansible
 - it follows certain directory structure and coding practices
-- roles can't be executed directly
+- roles can't be executed directly ( they are like Windows DLL )
 - roles can be invoked in playbook
 - when we execute playbook,it can invoke one or more roles
 - generally one ansible role, will install one software
