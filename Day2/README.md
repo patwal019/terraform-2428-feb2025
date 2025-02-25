@@ -38,3 +38,15 @@ exit
 
 Expected output
 ![image](https://github.com/user-attachments/assets/162b811a-aab4-4696-8e0c-85645de10f6d)
+
+## Lab - Let's update inventory to add the rocky linux ansible node containers
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day2/ansible
+cat hosts
+ansible all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c4c8270a-fc33-4970-9a2f-90f3738e9440)
