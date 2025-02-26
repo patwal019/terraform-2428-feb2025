@@ -183,3 +183,5 @@ go run ./main.go
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/4de40444-89f3-4b9e-b72d-b7dee4d280d0)
+![image](https://github.com/user-attachments/assets/ded526e0-8b07-4511-bd60-cd747a6d4fbd)
