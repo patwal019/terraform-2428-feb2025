@@ -29,6 +29,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/b45e1b45-74c6-4d31-8178-4dc4c7caad03)
 
 ## Lab - Understanding golang arrays
+Golang array are fixed in size, they won't grow dynamically at runtime.
+
 ```
 cd ~/terraform-2428-feb2025
 git pull
