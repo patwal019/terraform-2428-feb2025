@@ -158,7 +158,7 @@ cat go.mod
 go mod tidy
 ```
 
-Let's create a main.go file with the below content 
+Let's create a main.go file with the below content under tektutor folder
 <pre>
 package main
 
