@@ -69,3 +69,17 @@ go run ./map.go
 Expected output
 ![image](https://github.com/user-attachments/assets/93998a44-1804-4214-993f-6a3e36768aea)
 ![image](https://github.com/user-attachments/assets/f925c7bc-c6ae-4eee-a73f-421755e2b793)
+
+
+## Lab - Understanding golang struct
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day3/golang
+cat struct.go
+go run ./struct.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/109650a7-9835-4579-8c8a-198555d4e39b)
+
