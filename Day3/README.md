@@ -83,3 +83,31 @@ go run ./struct.go
 Expected output
 ![image](https://github.com/user-attachments/assets/109650a7-9835-4579-8c8a-198555d4e39b)
 
+## Lab - Understanding golang concurrency
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day3/golang
+cat concurrency.go
+go run ./concurrency.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5301b537-553c-4f1b-813b-97fa2719c150)
+![image](https://github.com/user-attachments/assets/ec9af359-ab23-4e5c-b8fb-14d9ef4fb5c3)
+
+
+
+## Lab - Understanding golang channels and concurrency
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day3/golang
+cat channel.go
+go run ./channel.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/82ae699d-040e-4476-a93c-247d6a82573f)
+![image](https://github.com/user-attachments/assets/b73b00e8-8e13-468f-b3d2-512e41b96722)
+![image](https://github.com/user-attachments/assets/6265b58e-eabd-4e1b-a005-1a21263fe124)
