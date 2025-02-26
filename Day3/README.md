@@ -35,9 +35,23 @@ Golang array are fixed in size, they won't grow dynamically at runtime.
 cd ~/terraform-2428-feb2025
 git pull
 cd Day3/golang
-cat arrys.go
+cat arrays.go
 go run ./arrays.go
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/b24ef271-96ae-4eea-a74a-14ddc8a51ffa)
+
+## Lab - Understanding golang slice
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day3/golang
+cat slice.go
+go run ./slice.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c38f2624-7ec7-4444-a96d-d3e759e14a9a)
+
+![image](https://github.com/user-attachments/assets/d3f6e608-e58c-4a65-afec-0ec57ac9a510)
