@@ -55,3 +55,17 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c38f2624-7ec7-4444-a96d-d3e759e14a9a)
 
 ![image](https://github.com/user-attachments/assets/d3f6e608-e58c-4a65-afec-0ec57ac9a510)
+
+
+## Lab - Understanding golang map
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day3/golang
+cat map.go
+go run ./map.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/93998a44-1804-4214-993f-6a3e36768aea)
+![image](https://github.com/user-attachments/assets/f925c7bc-c6ae-4eee-a73f-421755e2b793)
