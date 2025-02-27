@@ -113,6 +113,25 @@ Expected output
 ![image](https://github.com/user-attachments/assets/316354e9-66bd-4dbe-9c10-8760f9823e8d)
 ![image](https://github.com/user-attachments/assets/831830b0-8b6e-419e-a2be-b8dc0f8bb7d9)
 ![image](https://github.com/user-attachments/assets/d9e4cd11-eacb-40c1-99f2-5ca536c4eee0)
-
 ![image](https://github.com/user-attachments/assets/8b49af6c-3c2b-4fac-91b7-9480901511e4)
 ![image](https://github.com/user-attachments/assets/2795ce5e-bed4-4403-9f0c-742a65124964)
+
+## Lab - Invoking ansible playbook from terraform 
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/terraform/invoking-ansible-playbook-from-terraform
+terraform init
+terraform plan
+terraform apply --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b750112a-8964-4a53-b1da-056884e6f7dc)
+![image](https://github.com/user-attachments/assets/49188ed8-351e-44b6-9ecd-1a4b37603d17)
+![image](https://github.com/user-attachments/assets/02f7630a-1471-458f-a508-93abaf518ea9)
+![image](https://github.com/user-attachments/assets/1db05416-7aa3-484b-a495-353dfc6a75fc)
+![image](https://github.com/user-attachments/assets/88b1b73d-d411-4a28-b629-10bc3146daf3)
+![image](https://github.com/user-attachments/assets/301c5294-7774-4bbb-8ddb-12adbdb609d8)
+![image](https://github.com/user-attachments/assets/83ae0e58-0363-4e96-8d04-4bd2e11ea85b)
+![image](https://github.com/user-attachments/assets/b9dc63ef-e424-4c87-905a-859659448c77)
