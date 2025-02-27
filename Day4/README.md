@@ -171,3 +171,33 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a54d2fad-72b6-4616-a7ff-81df574c0d40)
 ![image](https://github.com/user-attachments/assets/c08d816d-d981-4b59-99e3-79b5c3317e34)
 ![image](https://github.com/user-attachments/assets/59ba84de-016e-4f87-83cb-6baf41e0cf0c)
+
+## Info - Terraform Module
+<pre>
+- is a collection of many terraform scripts(*.tf) files in a dedicated folder
+- modules encpasulate group of terraform resources related to a single infrastructure/task
+- modules allows us to resue code
+- the terraform scripts kept in the top-level folder is reerred as root module
+- the terraform scripts kept in the top-level sub-folder is referred as child module
+- a root module may have zero to many child modules
+</pre>
+
+## Lab - Terraform root and child modules
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/terraform/modules
+tree
+terraform init
+terraform apply --auto-approve
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2f3b7f67-db4d-4523-bb20-230300287190)
+![image](https://github.com/user-attachments/assets/12b13d4f-3096-4fe6-bc44-b403c8ef7c8f)
+![image](https://github.com/user-attachments/assets/0096cac0-dd61-45ed-905a-20f1c1aef7f6)
+![image](https://github.com/user-attachments/assets/c60bdaf0-ac6f-4a60-ac23-70a532f3e22e)
+![image](https://github.com/user-attachments/assets/89fdc35b-d2a9-47c3-bba1-64b566d57a89)
+![image](https://github.com/user-attachments/assets/981adb40-7515-4f19-9233-54c354c70208)
+
