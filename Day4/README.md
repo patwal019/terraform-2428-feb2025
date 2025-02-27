@@ -1,1 +1,23 @@
 # Day 4
+
+## Info - Terraform Overview
+<pre>
+- is a Infrastructure as a Code (IOC) tool
+- in other a provisioner tool
+- cloud newtral
+- alternates to tranform
+  - AWS Cloud formation
+- terraform supports state management of resources 
+- comes in 2 flavours
+  - Terraform core - opensource and CLI
+  - Terraform Enterprise - Web Interface ( Commercial product from HashiCorp )
+- Terraform uses a DSL called HCL(HashiCorp Configuration Language ) for writing automation scripts
+- terraform depends on providers to provision resources
+- For examples
+  - aws provider helps terraform provision resources in AWS cloud
+  - azure provider helps terraform provision resources in Azure cloud
+  - docker provider that helps terraform provision resources like image, container, network, etc
+  - local provider that helps terraform provision files in the local machine
+- Terraform supports a provider plugin framework to develop custom terraform providers
+
+</pre>
