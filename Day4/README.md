@@ -22,3 +22,11 @@
 - Terraform supports a provider plugin framework to develop custom terraform providers
 - Terraform providers are developed in Golang as the Terraform Provider Plugin Framework is natively written in Golang
 </pre>
+
+## Lab - Checking the terraform version
+```
+terraform version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a96b8bb3-88df-4b57-9549-03cec717d9b5)
