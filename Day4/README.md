@@ -252,6 +252,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a65fdcfc-ad5b-4563-aa00-c34b11ec86a3)
 
 ## Lab - Using our custom localfile terraform plugin
+```
 cd ~/terraform-2428-feb2025
 git pull
 cd Day4/custom-terraform-provider/test-custom-terraform-file-provider
