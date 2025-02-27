@@ -224,3 +224,54 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c65631f4-5449-49b4-a9a0-8132774ff743)
 ![image](https://github.com/user-attachments/assets/05ba4630-1918-48fa-99f7-074e6db12733)
 ![image](https://github.com/user-attachments/assets/c6193009-02dc-4150-9140-28cf6830d0e2)
+
+
+## Lab - Developing a Custom localfile provider for Terraform in golang
+Create a file in your home direction i.e /home/rps/.terraformrc with the below content
+<pre>
+provider_installation {
+  dev_overrides {
+      //"registry.terraform.io/tektutor/docker" = "/home/rps/go/bin"
+      "registry.terraform.io/tektutor/file" = "/home/prs/go/bin"
+  }
+  direct {}
+}  
+</pre>
+
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/custom-terraform-provider/file
+tree
+go mod tidy
+go build -o terraform-file-provider
+go install
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a65fdcfc-ad5b-4563-aa00-c34b11ec86a3)
+
+## Lab - Using our custom localfile terraform plugin
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/custom-terraform-provider/test-custom-terraform-file-provider
+cat main.tf
+terraform plan
+ls -l
+terraform apply --auto-approve
+ls -l
+cat test1.txt
+```
+Expected output
+![image](https://github.com/user-attachments/assets/24f056d2-c75a-45aa-8ef4-54ba87c712c4)
+![image](https://github.com/user-attachments/assets/4feb3d1f-af4a-416d-8977-852ecc9a3240)
+![image](https://github.com/user-attachments/assets/a9aeca62-e769-4bd1-b867-41aebe817640)
+
+Once you are done with this lab exercise, you may clean up
+```
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/80142726-fcfd-4cba-b110-2e27cab619bc)
+
