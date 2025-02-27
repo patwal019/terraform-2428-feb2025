@@ -8,6 +8,7 @@
 - alternates to tranform
   - AWS Cloud formation
 - terraform supports state management of resources 
+- is developed in Golang
 - comes in 2 flavours
   - Terraform core - opensource and CLI
   - Terraform Enterprise - Web Interface ( Commercial product from HashiCorp )
@@ -19,5 +20,5 @@
   - docker provider that helps terraform provision resources like image, container, network, etc
   - local provider that helps terraform provision files in the local machine
 - Terraform supports a provider plugin framework to develop custom terraform providers
-
+- Terraform providers are developed in Golang as the Terraform Provider Plugin Framework is natively written in Golang
 </pre>
