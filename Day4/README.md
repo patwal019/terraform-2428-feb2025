@@ -146,3 +146,28 @@ Expected output
 ![image](https://github.com/user-attachments/assets/50f27285-495c-4582-89bc-c4522855107f)
 ![image](https://github.com/user-attachments/assets/6f8929b3-a0d3-4df6-817a-b4bc920e2be1)
 ![image](https://github.com/user-attachments/assets/36bf19be-1aee-4137-9ba2-cd01089164e7)
+
+## Lab - Understanding Terraform remote-exec provisioner block
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/terraform/remote-exec
+cat vars.tf
+cat main.tf
+terraform init
+terraform plan
+terraform apply --auto-approve
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ac72fc80-cf79-4d45-8ed6-1eb33d4236c0)
+![image](https://github.com/user-attachments/assets/8f966a83-17f9-4f53-a24f-5389a2de79b1)
+![image](https://github.com/user-attachments/assets/ce3a3573-a745-4457-bda0-bd53d34d21e3)
+![image](https://github.com/user-attachments/assets/3f4c0983-48a6-40e2-9564-fb511b66cf27)
+![image](https://github.com/user-attachments/assets/70ed7c7b-d71d-471f-8d68-192a406e6cf5)
+![image](https://github.com/user-attachments/assets/3cb51b07-0cfa-43e0-a6fa-577e810b464e)
+![image](https://github.com/user-attachments/assets/68aca640-00cd-43e4-a279-4d58d67b68cb)
+![image](https://github.com/user-attachments/assets/a54d2fad-72b6-4616-a7ff-81df574c0d40)
+![image](https://github.com/user-attachments/assets/c08d816d-d981-4b59-99e3-79b5c3317e34)
+![image](https://github.com/user-attachments/assets/59ba84de-016e-4f87-83cb-6baf41e0cf0c)
