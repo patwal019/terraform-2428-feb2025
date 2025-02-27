@@ -201,3 +201,26 @@ Expected output
 ![image](https://github.com/user-attachments/assets/89fdc35b-d2a9-47c3-bba1-64b566d57a89)
 ![image](https://github.com/user-attachments/assets/981adb40-7515-4f19-9233-54c354c70208)
 
+## Lab - Retaining certain resources from getting destroyed
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/terraform/modules
+tree
+terraform init
+terraform apply --auto-approve
+terraform state list
+terraform state rm module.create-docker-containers.docker_container.my_container[1]
+terraform destroy --auto-approve
+docker ps
+terraform show
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/630de956-cc4e-4f4c-93cc-1c431577762e)
+![image](https://github.com/user-attachments/assets/306dd1e5-bcba-4c82-b4c9-429d8a163b59)
+![image](https://github.com/user-attachments/assets/3153e803-303a-4ed1-b8aa-37dca323b35e)
+![image](https://github.com/user-attachments/assets/7c9fd328-1e62-4d75-af7a-be5c2a2b2e77)
+![image](https://github.com/user-attachments/assets/c65631f4-5449-49b4-a9a0-8132774ff743)
+![image](https://github.com/user-attachments/assets/05ba4630-1918-48fa-99f7-074e6db12733)
+![image](https://github.com/user-attachments/assets/c6193009-02dc-4150-9140-28cf6830d0e2)
