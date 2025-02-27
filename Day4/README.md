@@ -89,3 +89,30 @@ terraform destroy
 Expected output
 ![image](https://github.com/user-attachments/assets/6bf939b4-035a-4480-832a-8fd71f21e89e)
 ![image](https://github.com/user-attachments/assets/ed403027-128e-447b-961d-4e073a19a568)
+
+## Lab - Provision a docker container using Terraform
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/terraform/provision-docker-container
+cat providers.tf
+cat main.tf
+terraform init
+terraform apply --auto-approve
+docker images
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/006f4feb-54c1-41e3-9650-971c805f456f)
+![image](https://github.com/user-attachments/assets/8fcec5ce-6754-45d2-82e3-e6ab344a6697)
+![image](https://github.com/user-attachments/assets/76b6f670-34ab-433e-ad00-49ab2430c073)
+![image](https://github.com/user-attachments/assets/5e9f8bb1-f816-43a0-b359-af2d8d90df40)
+![image](https://github.com/user-attachments/assets/1655e04c-36bd-48ea-a58a-06f1e1acfb6b)
+![image](https://github.com/user-attachments/assets/1e4595e7-621b-43fe-a227-a6257e625391)
+![image](https://github.com/user-attachments/assets/316354e9-66bd-4dbe-9c10-8760f9823e8d)
+![image](https://github.com/user-attachments/assets/831830b0-8b6e-419e-a2be-b8dc0f8bb7d9)
+![image](https://github.com/user-attachments/assets/d9e4cd11-eacb-40c1-99f2-5ca536c4eee0)
+
+![image](https://github.com/user-attachments/assets/8b49af6c-3c2b-4fac-91b7-9480901511e4)
+![image](https://github.com/user-attachments/assets/2795ce5e-bed4-4403-9f0c-742a65124964)
