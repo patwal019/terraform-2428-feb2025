@@ -232,7 +232,7 @@ Create a file in your home direction i.e /home/rps/.terraformrc with the below c
 provider_installation {
   dev_overrides {
       //"registry.terraform.io/tektutor/docker" = "/home/rps/go/bin"
-      "registry.terraform.io/tektutor/file" = "/home/prs/go/bin"
+      "registry.terraform.io/tektutor/file" = "/home/rps/go/bin"
   }
   direct {}
 }  
