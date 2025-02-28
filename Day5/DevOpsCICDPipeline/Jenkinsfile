@@ -25,7 +25,17 @@ pipeline {
 //			echo "About to invoke Terraform ..."
 //		}
 //	}
-	stage("Build Custom Terraform Provider and Install it") {
+	stage("Build Custom Terraform File Provider and Install it") {
+	    steps {
+                script {
+		  dir("Day4/custom-terraform-provider/file") {
+		     sh "go build"
+		     sh "go install"
+	  	  }
+		}
+	    }
+	}
+	stage("Build Custom Terraform Docker Provider and Install it") {
 	    steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/custom-terraform-provider/docker") {
