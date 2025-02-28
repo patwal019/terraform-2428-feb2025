@@ -10,7 +10,7 @@
 ## Linux Package Managers
 <pre>
 - a utility that comes with every Linux distribution
-- used to downad/install/uninstall/upgrade/downgrade softwares
+- used to download/install/uninstall/upgrade/downgrade softwares
 - package manager downloads the softwares from a url maintained in repository configuration files
 - the package manager is aware from where to download the software
 - the package manager will never download a software that is incompatible to a particular linux distribution
