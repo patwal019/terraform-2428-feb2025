@@ -276,3 +276,54 @@ terraform destroy --auto-approve
 Expected output
 ![image](https://github.com/user-attachments/assets/80142726-fcfd-4cba-b110-2e27cab619bc)
 
+
+## Lab - Developing a custom terraform docker provider in golang
+Create a /home/rps/.terraformrc file with the below content to help terraform locate your provider.  Normally it attempts to download the provider plugins from register.terraform.io website otherwise.
+<pre>
+Create a file in your home direction i.e /home/rps/.terraformrc with the below content
+<pre>
+provider_installation {
+  dev_overrides {
+      "registry.terraform.io/tektutor/docker" = "/home/rps/go/bin",
+      "registry.terraform.io/tektutor/file" = "/home/rps/go/bin"
+  }
+  direct {}
+}  
+</pre>  
+
+Now you may try to build and install the custom docker provider
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/custom-terraform-provider/docker
+tree
+go build
+go install
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6cf10681-3998-4feb-b769-b4cb75e84cf2)
+
+Let's use the custom docker provider in a terraform manifest file
+```
+cd ~/terraform-2428-feb2025
+git pull
+cd Day4/custom-terraform-provider/test-custom-terraform-docker-provider
+ls -l
+cat main.tf
+terraform plan
+terraform apply --auto-approve
+terraform show
+docker ps
+terraform destroy --auto-approve
+terraform show
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b0df8442-7640-4a66-86cd-2a322697e7c3)
+![image](https://github.com/user-attachments/assets/10be9a9d-db07-4496-918c-ce49ee1048eb)
+![image](https://github.com/user-attachments/assets/1839192e-005c-47ed-a188-9720fcf81d71)
+![image](https://github.com/user-attachments/assets/0889dce6-ba70-4598-a96c-a50bbd588a42)
+![image](https://github.com/user-attachments/assets/f3d69b99-f6d7-4696-8425-c4e9ffd30c5f)
+![image](https://github.com/user-attachments/assets/faf6eb67-39df-4bc7-b066-5f6a065045fe)
+![image](https://github.com/user-attachments/assets/42b1d8f4-c01a-4def-83ba-30ee6413ac94)
