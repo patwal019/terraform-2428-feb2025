@@ -1,5 +1,20 @@
 # Day 5
 
+## Info - Terraform Module vs Terraform Provider
+<pre>
+- Terraform Provider is developed by a Terraform Provider developer using golang programming language
+- Terraform Module is written by DevOps Engineers who use the Terraform provider
+- Terraform Module is written in HCL(Hashicorp Configuration Language) will file extensions *.tf
+- Terraform Module is written in declarative code
+- Terraform Modules are reusable code that can be invoked from Terraform Root modules
+- Terraform Modules can be reused across many Terraform Projects
+- Terraform Modules depends on one or more Terraform Providers
+- Terraform Projects is nothing but the top level folder that has the below
+  - Terraform Providers
+  - Terraform Root Module
+    - Terrafoorm child Module(s) optionally
+</pre>
+
 ## Lab - Printing Resources and Datasources supported by any Terraform Provider 
 ```
 cd ~/terraform-2428-feb2025
