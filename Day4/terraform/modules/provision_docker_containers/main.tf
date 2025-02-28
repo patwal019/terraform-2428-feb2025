@@ -17,4 +17,8 @@ resource "docker_container" "my_container" {
      internal = "80" 
      external = "800${count.index+1}"
    }
+
+   lifecycle {
+     prevent_destroy = true
+   }
 }
