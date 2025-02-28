@@ -217,4 +217,24 @@ General Section
 
 Triggers Section
 ![image](https://github.com/user-attachments/assets/c462b3cb-48c8-424d-8c66-ba576da739a8)
-Select "Poll SCM" checkbox
+Select "Poll SCM" checkbox and under schedule type "H/02 * * * *"
+![image](https://github.com/user-attachments/assets/a6178c7e-4e5b-471a-97ea-50715c1e0dca)
+
+Pipeline Section
+![image](https://github.com/user-attachments/assets/59eb88af-a641-486f-b65c-9acc08f00902)
+Click Definition
+![image](https://github.com/user-attachments/assets/647d6c81-7364-4114-82a2-0936c24b598c)
+Select "Pipeline Script from SCM"
+![image](https://github.com/user-attachments/assets/e41594e3-d0c9-445b-a8f8-d0e5b6f3f3b1)
+Under SCM, select "Git"
+![image](https://github.com/user-attachments/assets/0d381c75-2d68-4073-8d62-684876a75c44)
+![image](https://github.com/user-attachments/assets/b1337742-1710-4149-a8de-9211c00e801a)
+Under Repository url type "https://github.com/tektutor/terraform-2428-feb2025.git"
+![image](https://github.com/user-attachments/assets/6a1a93d9-6286-4546-a3a7-41336cd44248)
+Under "Branch specifier" replace "master" with "main" branch
+![image](https://github.com/user-attachments/assets/d78518eb-8cb0-4dbd-9385-3190f8473069)
+Under Script Path, update "Day5/DevOpsCICDPipeline\Jenkinsfile"
+![image](https://github.com/user-attachments/assets/cbeee504-c057-484e-a205-75da1fa5d1fd)
+Click "Save"
+![image](https://github.com/user-attachments/assets/26c04828-e23c-498a-8ca1-f1944065d1bc)
+
