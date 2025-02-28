@@ -5,6 +5,12 @@
 https://survey.zohopublic.com/zs/jkCK83  
 </pre>
 
+## Kindly complete post-test from RPS Cloud machine
+<pre>
+- Once you login to RPS Ubuntu cloud machine, in the desktop you will find an excel with login credentials and url
+- Just that this time you need to complete post-test not the pre-test
+</pre>
+
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
 
