@@ -4,11 +4,7 @@ resource "docker_container" "container" {
   image_name = var.image.name
 }
 
-resource "local_file" "invoke_ansible_playbook" {
+resource "localfile" "myfile" {
   content = "some ip"
   filename = "./ip.txt"
-
-  provisioner "local-exec" {
-     command = "ansible-playbook -i ./hosts install-nginx-playbook.yml"
-  }
 }

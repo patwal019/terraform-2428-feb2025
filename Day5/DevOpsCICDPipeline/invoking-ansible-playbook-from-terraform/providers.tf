@@ -5,8 +5,7 @@ terraform {
       version = "2.0.0"
     }
     local = {
-      source = "hashicorp/local"
-      version = "2.5.2"
+      source = "tektutor/localfile"
     }
   }
 }
@@ -15,6 +14,6 @@ provider "docker" {
   # Configuration options
 }
 
-provider "local" {
+provider "localfile" {
   # Configuration options
 }
