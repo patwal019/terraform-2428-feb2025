@@ -1,0 +1,5 @@
+- name: Install Extra Packages for Enterprise Linux (EPEL) release packages in Rocky
+  yum: name=epel-release state=latest 
+
+- name: Install nginx in Rocky 
+  yum: name=nginx state=latest 
