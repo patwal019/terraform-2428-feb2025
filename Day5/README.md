@@ -1,5 +1,8 @@
 # Day 5
 
+## Info - Infrastructure automation test cases ( Sentinel Policy Management )
+https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
+
 ## Info - Terraform Module vs Terraform Provider
 <pre>
 - Terraform Provider is developed by a Terraform Provider developer using golang programming language
