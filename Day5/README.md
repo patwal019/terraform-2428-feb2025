@@ -203,3 +203,18 @@ Click "Start using Jenkins"
     - Terraform will invoke ansible playbook to perform configuration management i.e install nginx web server on it
   - We will get build report
 </pre>
+
+Let's navigate to Jenkins Dashboard in RPS Ubuntu cloud machine Chrome Web browser
+![image](https://github.com/user-attachments/assets/3319dcc7-5355-4500-88e7-7ced89f5f11e)
+In the middle of the screen, you can click "Create a job"
+![image](https://github.com/user-attachments/assets/6df8d4ee-9171-4202-bc81-41c981b13d64)
+Select the "Pipeline" and under "Enter an item name" type DevOpsCICDPipeline
+![image](https://github.com/user-attachments/assets/f5d2d653-ae7c-487c-888a-501f8658457e)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/500e24c7-b764-442a-a6f4-06fad39bcc3f)
+General Section
+![image](https://github.com/user-attachments/assets/87134d7c-e660-48e4-bc8e-bdf9317bb724)
+
+Triggers Section
+![image](https://github.com/user-attachments/assets/c462b3cb-48c8-424d-8c66-ba576da739a8)
+Select "Poll SCM" checkbox
