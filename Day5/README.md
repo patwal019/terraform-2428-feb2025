@@ -158,6 +158,7 @@ java -jar ./jenkins.war
 Expected output
 ![image](https://github.com/user-attachments/assets/a844181c-d7ba-4de7-bd79-8b6ada77f8ac)
 ![image](https://github.com/user-attachments/assets/1647eb41-a428-4b67-b44c-a7d263399a4e)
+![image](https://github.com/user-attachments/assets/e990041c-9738-4cd6-9ac1-2ceadc022a1d)
 
 
 ## Lab - Accessing Jenkins Dashboard from your RPS Cloud machine chrome web browser
@@ -178,3 +179,14 @@ Click "Continue"
 Click "Install suggested plugins"
 ![image](https://github.com/user-attachments/assets/4d02d877-0a5c-43a9-8e9c-406ca2ffc28c)
 ![image](https://github.com/user-attachments/assets/9b6b19b5-3aeb-476d-bdb2-7b7bfdaaef04)
+![image](https://github.com/user-attachments/assets/19200eb4-7e0b-4cc6-a240-3a3ebe2b25ea)
+![image](https://github.com/user-attachments/assets/f16b84a1-cfaf-4d7c-aacb-e70927eb3435)
+You can type in your name and details requested
+![image](https://github.com/user-attachments/assets/6824bedd-aa74-4293-ae64-3c4294658ef9)
+![image](https://github.com/user-attachments/assets/42773f53-d435-44c4-9788-39d78656b7c6)
+Click "Save and Continue"
+![image](https://github.com/user-attachments/assets/6148df31-e7b7-465f-b64c-b804e7a4fa55)
+Click "Save and Finish"
+![image](https://github.com/user-attachments/assets/43424e6c-bc3e-42b1-9e94-626031a071d5)
+Click "Start using Jenkins"
+![image](https://github.com/user-attachments/assets/6cab67e6-9442-41ad-9fc5-14403c7f0406)
