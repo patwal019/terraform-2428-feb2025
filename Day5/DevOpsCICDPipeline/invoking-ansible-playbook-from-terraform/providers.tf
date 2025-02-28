@@ -4,8 +4,8 @@ terraform {
       source = "tektutor/docker"
       version = "2.0.0"
     }
-    local = {
-      source = "tektutor/localfile"
+    file = {
+      source = "tektutor/file"
     }
   }
 }
@@ -14,6 +14,6 @@ provider "docker" {
   # Configuration options
 }
 
-provider "localfile" {
+provider "file" {
   # Configuration options
 }
