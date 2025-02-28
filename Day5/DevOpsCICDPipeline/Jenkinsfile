@@ -38,7 +38,7 @@ pipeline {
         stage("Invoke Terraform Automation Script") {
             steps {
                 script {
-		  dir("Day5/DevOpsCICDPipeline/invoking-ansibleplaybook-from-terraform") {
+		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
                     sh "terraform init"
 		    sh "terraform apply --auto-approve"
 		    sh "terraform show"
@@ -50,7 +50,7 @@ pipeline {
         stage('Invoke Ansible Playbook') {
             steps {
                 script {
-		  dir("Day5/DevOpsCICDPipeline/invoking-ansibleplaybook-from-terraform") {
+		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
                     sh "ansible-playbook -i hosts install-nginx-playbook.yml"
 		  }
                 }
@@ -66,7 +66,7 @@ pipeline {
         stage('Dispose the resource created by Terraform') {
             steps {
                 script {
-		  dir("Day5/DevOpsCICDPipeline/invoking-ansibleplaybook-from-terraform") {
+		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
                     sh "terraform destroy --auto-approve"
 		    sh "docker ps"
 		  }
