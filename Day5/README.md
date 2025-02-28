@@ -203,3 +203,42 @@ Click "Start using Jenkins"
     - Terraform will invoke ansible playbook to perform configuration management i.e install nginx web server on it
   - We will get build report
 </pre>
+
+Let's navigate to Jenkins Dashboard in RPS Ubuntu cloud machine Chrome Web browser
+![image](https://github.com/user-attachments/assets/3319dcc7-5355-4500-88e7-7ced89f5f11e)
+In the middle of the screen, you can click "Create a job"
+![image](https://github.com/user-attachments/assets/6df8d4ee-9171-4202-bc81-41c981b13d64)
+Select the "Pipeline" and under "Enter an item name" type DevOpsCICDPipeline
+![image](https://github.com/user-attachments/assets/f5d2d653-ae7c-487c-888a-501f8658457e)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/500e24c7-b764-442a-a6f4-06fad39bcc3f)
+General Section
+![image](https://github.com/user-attachments/assets/87134d7c-e660-48e4-bc8e-bdf9317bb724)
+
+Triggers Section
+![image](https://github.com/user-attachments/assets/c462b3cb-48c8-424d-8c66-ba576da739a8)
+Select "Poll SCM" checkbox and under schedule type "H/02 * * * *"
+![image](https://github.com/user-attachments/assets/a6178c7e-4e5b-471a-97ea-50715c1e0dca)
+
+Pipeline Section
+![image](https://github.com/user-attachments/assets/59eb88af-a641-486f-b65c-9acc08f00902)
+Click Definition
+![image](https://github.com/user-attachments/assets/647d6c81-7364-4114-82a2-0936c24b598c)
+Select "Pipeline Script from SCM"
+![image](https://github.com/user-attachments/assets/e41594e3-d0c9-445b-a8f8-d0e5b6f3f3b1)
+Under SCM, select "Git"
+![image](https://github.com/user-attachments/assets/0d381c75-2d68-4073-8d62-684876a75c44)
+![image](https://github.com/user-attachments/assets/b1337742-1710-4149-a8de-9211c00e801a)
+Under Repository url type "https://github.com/tektutor/terraform-2428-feb2025.git"
+![image](https://github.com/user-attachments/assets/6a1a93d9-6286-4546-a3a7-41336cd44248)
+Under "Branch specifier" replace "master" with "main" branch
+![image](https://github.com/user-attachments/assets/d78518eb-8cb0-4dbd-9385-3190f8473069)
+Under Script Path, update "Day5/DevOpsCICDPipeline\Jenkinsfile"
+![image](https://github.com/user-attachments/assets/cbeee504-c057-484e-a205-75da1fa5d1fd)
+Click "Save"
+Build Progress
+![image](https://github.com/user-attachments/assets/26c04828-e23c-498a-8ca1-f1944065d1bc)
+![image](https://github.com/user-attachments/assets/423b6452-9db3-432e-899c-759eaa766690)
+![image](https://github.com/user-attachments/assets/2f914ca5-ad71-4fe9-bcd2-515ea991b2a9)
+![image](https://github.com/user-attachments/assets/38d262ad-e934-4dbd-a9d7-5462c84cf30b)
+
