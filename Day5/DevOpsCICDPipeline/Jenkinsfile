@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
-                    sh "terraform init"
+                    sh "terraform plan"
 		    sh "terraform apply --auto-approve"
 		    sh "terraform show"
 		    sh "docker ps"
