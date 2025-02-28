@@ -1,12 +1,12 @@
 terraform {
   required_providers {
-      localfile = {
+      file = {
          source = "tektutor/file"
       }
    }
 }
 
-resource "localfile" "myfile" {
+resource "file_localfile" "myfile" {
    file_name = "./test1.txt"
    file_content = "Test file"
 }

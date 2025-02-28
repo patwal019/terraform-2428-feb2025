@@ -4,7 +4,7 @@ resource "docker_container" "container" {
   image_name = var.image.name
 }
 
-resource "localfile" "myfile" {
+resource "file_localfile" "myfile" {
   content = "some ip"
   filename = "./ip.txt"
 }

@@ -28,7 +28,7 @@ pipeline {
 	stage("Build Custom Terraform File Provider and Install it") {
 	    steps {
                 script {
-		  dir("Day4/custom-terraform-provider/file") {
+		  dir("Day5/DevOpsCICDPipeline/custom-terraform-provider/file") {
 		     sh "go build"
 		     sh "go install"
 	  	  }
