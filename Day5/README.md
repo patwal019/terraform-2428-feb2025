@@ -156,6 +156,8 @@ java -jar ./jenkins.war
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/a844181c-d7ba-4de7-bd79-8b6ada77f8ac)
+![image](https://github.com/user-attachments/assets/1647eb41-a428-4b67-b44c-a7d263399a4e)
 
 
 ## Lab - Accessing Jenkins Dashboard from your RPS Cloud machine chrome web browser
@@ -164,3 +166,15 @@ http://localhost:8080
 </pre>
 
 Expected output
+![image](https://github.com/user-attachments/assets/9fb750bd-f98e-494b-9517-8a160ee68c99)
+
+Copy the path from the above screen and open a separate tab in chrome browser to see the initial admin password
+![image](https://github.com/user-attachments/assets/1bc36eea-7975-4aff-a258-1a06a001951c)
+Copy this initial admin password and paste the same in Jenkins Tab
+![image](https://github.com/user-attachments/assets/f3fbf663-c995-4e44-a8e5-fde54a770a67)
+![image](https://github.com/user-attachments/assets/97f952b0-5d6a-41b3-8d66-1459e184bddd)
+Click "Continue"
+![image](https://github.com/user-attachments/assets/fbb7acad-5af3-41d3-bf39-0118f135ae60)
+Click "Install suggested plugins"
+![image](https://github.com/user-attachments/assets/4d02d877-0a5c-43a9-8e9c-406ca2ffc28c)
+![image](https://github.com/user-attachments/assets/9b6b19b5-3aeb-476d-bdb2-7b7bfdaaef04)
