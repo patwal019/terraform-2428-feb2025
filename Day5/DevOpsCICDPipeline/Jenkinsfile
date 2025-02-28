@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
-		    sh "docker rm -f $(docker ps -aq)
+		    sh "terraform destroy --auto-approve"
                     sh "terraform plan"
 		    sh "terraform apply --auto-approve"
 		    sh "terraform show"
