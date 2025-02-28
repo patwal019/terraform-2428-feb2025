@@ -4,7 +4,7 @@ terraform {
       source = "tektutor/docker"
       version = "2.0.0"
     }
-    file = {
+    localfile = {
       source = "tektutor/file"
     }
   }
