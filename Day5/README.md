@@ -236,5 +236,9 @@ Under "Branch specifier" replace "master" with "main" branch
 Under Script Path, update "Day5/DevOpsCICDPipeline\Jenkinsfile"
 ![image](https://github.com/user-attachments/assets/cbeee504-c057-484e-a205-75da1fa5d1fd)
 Click "Save"
+Build Progress
 ![image](https://github.com/user-attachments/assets/26c04828-e23c-498a-8ca1-f1944065d1bc)
+![image](https://github.com/user-attachments/assets/423b6452-9db3-432e-899c-759eaa766690)
+![image](https://github.com/user-attachments/assets/2f914ca5-ad71-4fe9-bcd2-515ea991b2a9)
+![image](https://github.com/user-attachments/assets/38d262ad-e934-4dbd-a9d7-5462c84cf30b)
 
