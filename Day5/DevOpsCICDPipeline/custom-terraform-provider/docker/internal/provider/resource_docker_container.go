@@ -73,7 +73,7 @@ func resourceDockerContainerCreate( ctx context.Context, d *schema.ResourceData,
     imageName  := d.Get("image_name").(string)
     hostName  := d.Get("host_name").(string)
 
-    pullDockerImage ( imageName )
+   // pullDockerImage ( imageName )
 
     containerName = fmt.Sprintf("%v-%d", containerName, rand.IntN(99999))
 
