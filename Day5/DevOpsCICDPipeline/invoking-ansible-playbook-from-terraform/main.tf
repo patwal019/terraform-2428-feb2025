@@ -1,22 +1,7 @@
-data "docker_image" "tektutor_image" {
-  name = var.image_name
-}
-
 resource "docker_container" "container" {
-  name  = var.container_name
-  hostname = var.container_name 
-  image = data.docker_image.tektutor_image.name
-  must_run = true
-
-  ports {
-    internal = "22"
-    external = "2001"
-  }
-
-  ports {
-     internal = "80"
-     external = "8001"
-  }
+  container_name  = var.container_name
+  host_name = var.container_name 
+  image_name = var.image.name
 }
 
 resource "local_file" "invoke_ansible_playbook" {

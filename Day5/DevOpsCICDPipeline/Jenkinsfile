@@ -39,6 +39,7 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
+		    sh "docker rm -f $(docker ps -aq)
                     sh "terraform plan"
 		    sh "terraform apply --auto-approve"
 		    sh "terraform show"
@@ -59,7 +60,7 @@ pipeline {
         stage('Test if we are able to access web page from provisioned container') {
             steps {
                 script {
-                    sh "curl http://localhost:8001"
+                    sh "curl http://172.17.0.2:80"
                 }
             }
         }
