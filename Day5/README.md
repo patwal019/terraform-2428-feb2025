@@ -190,3 +190,16 @@ Click "Save and Finish"
 ![image](https://github.com/user-attachments/assets/43424e6c-bc3e-42b1-9e94-626031a071d5)
 Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/6cab67e6-9442-41ad-9fc5-14403c7f0406)
+
+## Lab - Let's create a DevOps CI/CD Pipeline
+<pre>
+- We will be creating Declarative Jenkins DevOps Pipeline  
+- The DevOps pipeline will have couple of stages
+  - Clone source from GitHub (This will taken care by Jenkins out of the box)
+  - Second stage - We will build our Custom Ansible Ubuntu Node Container Image
+  - Third stage - We will build our custom docker terraform provider and install it
+  - Fourth stage - We will run the terraform manifest script that provisions a container using the custom image we built in step 2
+    - Once it is able to provision a container using custom image built in step 2
+    - Terraform will invoke ansible playbook to perform configuration management i.e install nginx web server on it
+  - We will get build report
+</pre>
