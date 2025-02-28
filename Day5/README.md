@@ -1,5 +1,10 @@
 # Day 5
 
+## Training Feedback - Kindly share your training feedback here
+<pre>
+https://survey.zohopublic.com/zs/jkCK83  
+</pre>
+
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
 
